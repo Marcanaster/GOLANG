@@ -14,8 +14,8 @@ func alunoestaaprovado(nota1, nota2 float32) bool{
 	fmt.Println("Entrando na função para verificar se o aluno está aprovado")
 	media := (nota1 + nota2) / 2
 	
-	defer fmt.Println("Media calculada. Resultado será retornado")
 	if media >= 6{
+		defer fmt.Println("Media calculada. Resultado será retornado")
 		return true
 	}
 	return false
